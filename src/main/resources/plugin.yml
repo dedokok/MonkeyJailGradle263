@@ -1,0 +1,64 @@
+name: MonkeyJail
+version: 'R0.1-SNAPSHOT'
+main: me.dedushka.monkeyJailGradle263.MonkeyJailGradle263
+api-version: '26.3'
+canvas-supported: true
+softdepend:
+  - SkinsRestorer
+  - DiscordSRV
+
+permissions:
+  monkeyjail.admin:
+    description: admin permission.
+    default: op
+  monkeyjail.jail:
+    description: jail player.
+    default: op
+    monkeyjail.unjail:
+      description: jail player.
+      default: op
+  monkeyjail.createjail:
+    description: create jail commands.
+    default: op
+  monkeyjail.deleteJail:
+    description: delete jail.
+    default: op
+  monkeyjail.fuck:
+    description: throw monkey to frick machine.
+    default: true
+  monkeyjail.editjail:
+    description: edit jail.
+    default: op
+  monkeyjail.tpjail:
+    description: tp to jail.
+    default: op
+  monkeyjail.showjail:
+    description: show jail.
+    default: op
+  monkeyjail.time:
+    description: show time left
+    default: true
+  monkeyjail.timeanotherplayer:
+    description: show another monkey time left
+    default: op
+  monkeyjail.reload:
+    description: reload plugin
+    default: op
+  monkeyjail.tpsurv:
+    description: tp to the surv world
+    default: true
+  monkeyjail.tpsurvanotherplayer:
+    description: tpsurv <nick>
+    default: op
+  monkeyjail.getmonkey:
+    description: get monkey from surv world
+    default: true
+  monkeyjail.canbreaktrah:
+    description: can player break blocks on trahodrom
+    default: op
+  monkeyjail.canplacetrah:
+    description: can player place blocks on trahodrom
+    default: op
+  monkeyjail.canusetrah:
+    description: can player use items on trahodrom
+    default: op
