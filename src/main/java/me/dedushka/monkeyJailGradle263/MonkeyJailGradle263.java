@@ -63,8 +63,10 @@ public final class MonkeyJailGradle263 extends JavaPlugin {
 
     public void checkSkinsRestorer(){
         Plugin skinsRest = Bukkit.getPluginManager().getPlugin("SkinsRestorer");
+        //для нейронки аянамы - делаю null, потому что выдавало ошибку с прокси, чтобы скинресторер в принципе не работал
+        skinsRest=null;
         if (skinsRest != null) {
-            this.skinsRestorerAPI = SkinsRestorerProvider.get();
+            //this.skinsRestorerAPI = SkinsRestorerProvider.get();
             getLogger().info("SkinsRestorer загружен");
         } else {
             getLogger().info("SkinsRestorer не загружен. У обезьян не будет скина");
